@@ -88,7 +88,7 @@ void printTriangle(int length, int height)
 {
 	double doubleLinesOfAnyNum = ((double)(height - 2) / ((length - 3) / 2));
 	int linesOfAnyNum = doubleLinesOfAnyNum;
-	int linesOfMinNum = linesOfAnyNum + ((doubleLinesOfAnyNum - linesOfAnyNum) * ((length - 3) / 2));
+	int linesOfMinNum = linesOfAnyNum + ceil((doubleLinesOfAnyNum - linesOfAnyNum) * ((length - 3) / 2));
 	//print the first line
 	for (int j = 0; j < (length - 1) / 2; j++)
 		cout << " ";
